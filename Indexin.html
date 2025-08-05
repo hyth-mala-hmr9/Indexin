@@ -1,0 +1,60 @@
+<style type="text/css">
+body{
+       background-color:#e0f2f1;
+}
+
+    h2{
+      text-align:center;
+      color:#104d40;
+      
+    }
+    h3{
+        text-align: right;
+        color:#401f;
+        background-color:#d0e3e5;
+    }
+    
+    .main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top:250px;
+    
+    }
+      
+</style>
+    <div dir="rtl">
+
+      <h2>الفهرس الموحد المقترح لكلية الادآب جامعة صنعاء</h2>
+      <h3>يهدف الفهرس إلى توليد المراجع والمصادر إلى مكتبات كليات جامعة صنعاء ، وتكوين
+       فهرس الإلكتروني موحد يخدم الطلبة والباحثين في كافة المراحل الدراسية</h3>
+      <form style=" color:;background-color:#e0f2f1;" >
+      
+        <input  name="title" placeholder="العنوان" onChange={handleChange} required /><br><br>
+        <input name="author" placeholder="المؤلف" onChange={handleChange} required /><br><br>
+        <div class="form-group">
+        <label for="genre">النوع:</label>
+        <select id="genre" name="genre">
+        
+        <option value="رسائل">رسائل </option>
+        <option value="مقالات">مقالات</option>
+        <option value="كتب">كتب</option>
+        </select>
+        </div><br>
+        <input  name="year" placeholder="السنة" onChange={handleChange} type="number" /><br><br>
+        <input  ename="isbn" placeholder="ISBN" onChange={handleChange} /><br><br>
+ رفع صورة الغلاف<input type="file" name="cover" accept="image/*" /><br>
+ رفع ملف pdf  <input type="file" name="pdf" accept="application/pdf" /><br>
+        
+        <button type="submit">save</button><br>
+              
+          <footer class="main-footer">
+          <div class="container">
+          <p>&copy;جميع الحقوق محفوظة لدى @عبدالله مشورة @ هيثم الاحمر @ 2025</p>
+          </div>
+          </footer>
+         
+      </form>
+    </div>
